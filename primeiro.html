@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <div class="header">
@@ -16,17 +16,28 @@
         eu sou o corpo do site
         <div class="player">
             Jingle da radio Los Santos do GTA <br>
-            <audio controls autoplay>
-                <source src="radio_los_santos.mp3" type="audio/mpeg">
+            <audio id="musicplayer" controls>
+                <source src="assets/radio_los_santos.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
         </div>        
+        <div class="banner">
+            <img src="assets/logo radio.png" alt="logo">
+        </div>
 
     </div>
 
    <div class="footer">
         rodape
-   </div>
-      
+   </div>      
+
+   <script>
+        var x = document.getElementById("musicplayer");
+
+        x.autoplay = true;
+        x.load();
+   </script>
 </body>
+
+
 </html>

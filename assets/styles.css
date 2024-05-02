@@ -18,6 +18,7 @@ body {
     align-items: flex-start;
     padding: 1rem;
     background-color: #c3eed6;
+    margin: 0 auto;
   }
   
   .footer {
@@ -25,13 +26,14 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 1rem;
-    background-color: #c3eed6;
+    background-color: #191b1a;
+    margin: auto;
+    border-radius: 1ch;
   }
 
   .player {
     align-items: center;
     padding: 2rem;
-    margin: 10px;
-
+    margin: 10px;    
   }
   
