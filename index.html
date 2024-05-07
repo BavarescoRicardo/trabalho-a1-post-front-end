@@ -36,8 +36,8 @@
             <div class="pergunta-modal">
                 <h1>Devido as politicas de segunça eu preciso te perguntar</h1>
                 <h2>Quer reproduzir o audio?</h2>
-                <button id="btnSim" type="button">Sim</button>
-                <button id="btnNao" type="button">Não</button>
+                <button id="btnSim" type="button">Sim Concordo!</button>
+                <button id="btnNao" type="button" onmouseenter="moverimg()">Não concordo</button>
             </div>
             <span class="close">&times;</span>
             
@@ -55,6 +55,16 @@
         var audio = document.getElementById("musicplayer"); 
         var btnSim = document.getElementById("btnSim");
         var btnNao = document.getElementById("btnNao");
+
+        btnNao.style.position="relative";  
+        btnNao.style.left="0px";  
+        btnNao.style.top="0px";  
+        btnNao.style.right="0px";  
+        btnNao.style.down="0px";  
+        function moverimg() 
+        {              
+            btnNao.style.left=(parseInt(btnNao.style.left)-25)+"px";          
+        }  
         
         btnSim.onclick = function() {
             audio.play(); 
